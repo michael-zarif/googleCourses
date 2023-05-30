@@ -6,7 +6,8 @@ def replace_ending(sentence, old, new):
 
 	# Return the original sentence if there is no match 
 	return sentence
-	
+
+# Test Cases
 print(replace_ending("It's raining cats and cats", "cats", "dogs")) 
 print(replace_ending("She sells seashells by the seashore", "seashells", "donuts")) 
 print(replace_ending("The weather is nice in May", "may", "april")) 

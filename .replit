@@ -1,3 +1,2 @@
-language = "python3"
-entrypoint = "googleCrashCourse.py"
 run = ["python3", "googleCrashCourse.py"]
+entrypoint = "googleCrashCourse.py"
