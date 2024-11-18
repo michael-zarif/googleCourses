@@ -25,6 +25,7 @@ class Customer:
             else:
                 print(f"This book: '{book}' doesn't exist in your library")
 
+# Tests
 lib1 = Library(['book 1', 'book 2', 'book 3', 'book 4', 'book 5', 'book 6', 'book 7', 'book 8', 'book 9', 'book 10'])
 cust1 = Customer()
 cust2 = Customer()

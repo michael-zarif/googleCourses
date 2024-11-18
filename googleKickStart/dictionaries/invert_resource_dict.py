@@ -1,7 +1,7 @@
 # This function receives a dictionary, which contains resource
 # categories (keys) with a list of available resources (values) for a
 # company’s IT Department. The resources belong to multiple categories.
-# The function should reverse the keys and values to show which
+# The function should reverse the keys and values to showA which
 # categories (values) each resource (key) belongs to.
 
 

@@ -2,7 +2,7 @@ class Library:
     def __init__(self, books):
         self.books = books
     def display_available_books(self):
-        print(self.books)
+        print(f"The available books: {self.books}")
     def lend_book(self, book):
         self.books.remove(book)
     def add_book(self, book):
@@ -11,8 +11,7 @@ class Customer:
     def __init__(self):
         self.books = []
     def borrow_book(self, library):
-        print("Enter the name of the book you want to borrow: ")
-        book = input()
+        book = input("Enter the name of the book you want to borrow: ")
         if book in library.books:
             library.lend_book(book)
             self.books.append(book)
@@ -20,8 +19,7 @@ class Customer:
         else:
             print(f"The requested book: '{book}' is not available in the library")
     def return_book(self, library):
-        print("Enter the name of the book you want to return: ")
-        book = input()
+        book = input("Enter the name of the book you want to return: ")
         if book in self.books:
             library.add_book(book)
             self.books.remove(book)
@@ -37,7 +35,7 @@ while True:
     print('Enter 2 to borrow a book')
     print('Enter 3 to return a book')
     print('Enter any other number to leave the library')
-    user_input = int(input())
+    user_input = int(input("Your choice: "))
     match user_input:
         case 1:
             library.display_available_books()
@@ -46,4 +44,5 @@ while True:
         case 3:
             customer.return_book(library)
         case _:
+            print("See you later :)")
             quit()

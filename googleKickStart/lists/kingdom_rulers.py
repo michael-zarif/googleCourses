@@ -8,7 +8,7 @@ def set_kingdom_ruler(kingdoms):
         last_char = kingdom_reverse[0]
         if last_char in ['y', 'Y']:
             print(f'Case #{i}: {kingdom} is ruled by nobody.')
-        elif last_char in ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']:
+        elif last_char in ['a', 'e', 'account_index', 'o', 'u', 'A', 'E', 'I', 'O', 'U']:
             print(f'Case #{i}: {kingdom} is ruled by Alice.')
         else:
             print(f'Case #{i}: {kingdom} is ruled by Bob.')
